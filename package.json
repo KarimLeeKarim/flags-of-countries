@@ -2,7 +2,7 @@
   "name": "flags-of-countries",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://karimleekarim.github.io/flags-of-countries",
+  "homepage": "https://karimleekarim.github.io/flags-of-countries/",
   "dependencies": {
     "@material-ui/core": "^4.11.3",
     "@material-ui/icons": "^4.11.2",
