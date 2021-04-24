@@ -1,0 +1,45 @@
+.navbar{
+    height: 85px;
+    font-size: 30px;
+    box-shadow: 0px 1px 10px gray;
+    padding: 0px 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    @include respond(phone){
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 18px;
+        padding: 0px 10px;
+        height: 70px;
+    }
+    &__text{
+        padding-bottom: 0;
+        cursor: pointer;
+        @include respond (phone){
+            font-size: 25px;
+            font-weight:500;
+        }
+    }
+    &__button{
+        border:none;
+        display: flex;
+        align-items:center;
+        font-size: 30px;
+        cursor: pointer;
+        @include respond(phone){
+            font-size: 20px;
+
+        }
+    }
+    &__button:active{
+        border:0px solid gray;
+        box-shadow:5px 10px 10px black;
+        border-radius: 20px;
+    }
+    .fa-moon{
+        font-size: 30px;
+        margin-right: 5px;
+    }
+}

@@ -1,0 +1,50 @@
+@import "./settings/mixins";
+@import 'navbar';
+@import 'searching';
+@import 'city';
+@import 'countries';
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Akaya Telivigala', cursive;
+}
+body{
+    background-color:rgb(240, 236, 236)
+}
+
+
+
+.darkmode{
+    background-color: #202D36;
+    color: white;
+    .navbar{
+        box-shadow: 0px 1px 10px black;
+
+    }
+    .navbar__button:active{
+        box-shadow:5px 10px 7px white;
+        padding: 5px;
+
+    }
+    input{
+        background-color:#2a3c49;
+        color:white;
+    }
+    .fa-search:before{
+        color:white;
+    }
+    #regionsSelector{
+        background-color:#2a3c49;
+        color:white;
+    }
+    .card{
+        background-color:#2a3c49;
+    }
+    ::placeholder {
+        color: white;
+        opacity: 1; /* Firefox */
+    }
+}

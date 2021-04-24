@@ -1,0 +1,41 @@
+#countries{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-items: center;
+    @include respond(tab-port){
+    grid-template-columns: repeat(2,1fr);
+
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    @include respond(phone){
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+    }
+    .card{
+        margin: 30px 0;
+        &__body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: white;
+            border-radius: 0 0 10px 10px;
+            height: 120px;
+            padding: 0 20px;
+            .card-title{
+                font-size: 23px;
+                margin-bottom: 10px;
+            }
+            .card-text{
+                font-size: 19px;
+
+            }
+
+        }
+    }
+    .card-img-top{
+        border-radius: 10px 10px 0 0;
+    }
+}
